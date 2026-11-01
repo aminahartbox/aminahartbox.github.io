@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Bahnschift Light;
+  src: url(Bahnschrift\ Light.otf) format('otf');
+  font-weight: light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bahnschift Normal;
+  src: url(Bahnschrift\ Regular.otf) format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bahnschift Bold;
+  src: url(Bahnschrift\ Bold.otf) format('otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gill Sans Ultra Bold;
+  src: url(Gill\ Sans\ Ultra\ Bold.otf);
+  font-weight: bold;
+}

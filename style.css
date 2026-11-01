@@ -1,0 +1,250 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  background-image: url('https://media.istockphoto.com/id/1069232186/photo/paper-cutting-checkered-board-blue-colored-surface.jpg?s=612x612&w=0&k=20&c=PyL67CYzRrR0MYynUlFoiqJFmz_R6UkD6TimgwevPLQ=');
+  background-size: 300px;
+  background-repeat: repeat;
+}
+
+.content-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+.card {
+  display: block;
+  padding:1rem;
+  background: white;
+  border: 1px solid #eee;
+  border-radius:10px;
+  width: 100%;
+}
+
+
+.content > .col {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.content > .col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  min-width: 0;
+}
+
+.container {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-image: url('https://img.magnific.com/free-vector/abstract-horizontal-grid-lines-graph-style-graphic-design_1017-39918.jpg?semt=ais_hybrid&w=740&q=80');
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+
+.button {
+  background-color: #000;
+  color: #fff;
+  padding:0.5rem 1rem;
+  border-radius:10px; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: all ease-in-out 0.3s; 
+}
+
+.button-d {
+  background-color: #000;
+  color: #fff;
+  padding:0.5rem 1rem;
+  border-radius:10px; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: all ease-in-out 0.3s; 
+}
+
+.button:hover {
+color:#a5a5a5;
+transform:translateX(5px)
+}
+
+.gcolumn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.gcolumn img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.gcolumn img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.grow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.gcontainer {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+.apps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  justify-content: flex-start;
+}
+
+.apps div {
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  flex: 0 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 5px #888);
+}
+
+.apps img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.paper-clip {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: -90px auto 0rem; 
+  position: relative;
+  z-index: 2;
+  filter: hue-rotate(90deg) drop-shadow(1px 1px 1px #222);
+}
+
+.about-picture {
+background-image: url('https://pbs.twimg.com/media/HKcnG67aoAAP87a?format=jpg&name=large');
+          background-position:center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          transform: rotate(5deg);
+          margin-left:-4rem;
+          margin-right: -1rem;
+          width:400px;
+          height:450px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .content > .col,
+  .content > .col-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .content > .col {
+    margin-bottom: 1.5rem;
+  }
+
+  .content > .col .container {
+    position: relative;
+    top: auto;
+  }
+
+  .content > .col-9 > .container > div[style*="padding:1.5rem"] {
+    padding: 1rem;
+  }
+
+  .apps {
+    gap: 12px;
+  }
+
+  .apps > div {
+    flex-basis: 130px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .row.no-gutters.my-2 {
+    flex-wrap: wrap;
+  }
+
+  .row.no-gutters.my-2 > .col.card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 0 0 1rem !important;
+    min-height: 100px;
+  }
+
+  .row.no-gutters.my-2 > .col-1 {
+    display: none;
+  }
+
+  .gcolumn {
+    width: 50%;
+  }
+
+  .about-picture {transform: none;}
+}
+
+@media (max-width: 360px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .apps {
+    gap: 10px;
+  }
+
+  .apps > div {
+    flex-basis: 110px;
+    width: 100px;
+    height: 100px;
+    padding: 0.75rem;
+  }
+}
+
+
+

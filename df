@@ -1,0 +1,33 @@
+<div class="grow">
+  <div class="gcolumn">
+    <img src="assets/ABDUL_ELEX_FINAL.png" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="gcolumn">
+    <img src="" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="gcolumn">
+    <img src="" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="gcolumn">
+    <img src="" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="gcontainer">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<hr style="opacity:0"> 
+<a href="gallery.html" class="button">see more?</a>
+<hr style="opacity:0"> 
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
