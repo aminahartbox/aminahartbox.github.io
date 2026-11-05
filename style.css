@@ -2,7 +2,7 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 2rem;
-  background-image: url('https://media.istockphoto.com/id/1069232186/photo/paper-cutting-checkered-board-blue-colored-surface.jpg?s=612x612&w=0&k=20&c=PyL67CYzRrR0MYynUlFoiqJFmz_R6UkD6TimgwevPLQ=');
+  background-image: url('/assets/BG.jpg');
   background-size: 300px;
   background-repeat: repeat;
 }
